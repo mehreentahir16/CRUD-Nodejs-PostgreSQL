@@ -1,0 +1,35 @@
+<%- include ../layouts/header.ejs %>
+<div class="page-data">
+    <form method="post" action="/employees/add">
+        <table cellpadding="11">
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Job</td>
+                <td><input type="text" name="job" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Department</td>
+                <td><input type="text" name="department" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Salary</td>
+                <td><input type="number" name="salary" required /></td>
+            </tr>
+            <tr>
+                <td class="label">Hire Date</td>
+                <td><input type="date" name="hire_date"/></td>
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <button type="submit">Save</button>
+                    <button type="button" onClick="cancelAdd()">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<%- include ../layouts/footer.ejs %>
